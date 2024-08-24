@@ -10,7 +10,13 @@ public class FarmerAlBaryardInventoryApplicationTwo {
 		FileService fileService = new FileService();
 		Pig[] pigs = fileService.getPigsFromFile();
 		String[] pigNames = new String[4];
-  		
+  		Pig pig= new Pig();
+		
+   for (Pig pig:pigs) {
+	   System.out.println(pig.getName());
+   }
+		
+		
 		// SORT the pigs by name...
 		
 		// 1. run a for loop on the pig array
